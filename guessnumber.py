@@ -1,15 +1,16 @@
-import numpy as np # type: ignore
+import random
 
-def numbername():
-    num = np.random(1,100)
+def numbergame():
+    num = random.randint(1,100)
     print(num)
     while True:
-        user_num = int(input("Enter the number you have guessed.."))
+        user = int(input("Enter the number you have guessed.."))
 
-        if(num==user_num):
+        if(num==user):
             print("Absolutely!You are correct")
-        elif(num>user_num):
+            numbergame()
+        elif(num>user):
             print("It's too high from the correct answer")
         else:
             print("It's too low from the correct answer")   
-numbername()
+numbergame()
