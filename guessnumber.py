@@ -4,6 +4,7 @@ def numbername():
     
     while True:
         num = np.random(1,100)
+        print(num)
         user_num = input("Enter the number you have guessed..")
         
         if(num==user_num):
