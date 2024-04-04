@@ -4,9 +4,8 @@ def numbername():
     num = np.random(1,100)
     print(num)
     while True:
-        
         user_num = input("Enter the number you have guessed..")
-        
+
         if(num==user_num):
             print("Absolutely!You are correct")
         elif(num>user_num):
@@ -14,3 +13,7 @@ def numbername():
         else:
             print("It's too low from the correct answer")   
 numbername()     
+
+"""
+Updated by Vaithi
+"""
