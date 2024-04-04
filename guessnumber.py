@@ -1,10 +1,10 @@
 import numpy as np # type: ignore
 
 def numbername():
-    
+    num = np.random(1,100)
+    print(num)
     while True:
-        num = np.random(1,100)
-        print(num)
+        
         user_num = input("Enter the number you have guessed..")
         
         if(num==user_num):
